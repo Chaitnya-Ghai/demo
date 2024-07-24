@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
+    <title>Day1</title>
+</head>
+<body>
+    <table id="table">
+        <tbody>
+            <tr><th>
+                <img id="mainImage" src="/bike1.jpg" alt="mainImage"  width="600px">
+            </td></tr>
+            <tr><th>
+<img id="bike1" src="/bike1.jpg" alt="bike1" onmouseover="changeImg(1)" width="250px" onmouseout="resetImage(1)">
+<img id="bike2" src="/bike2.jpg" alt="bike2"onmouseover="changeImg(2)" width="250px"onmouseout="resetImage(2)">
+<img id="bike3" src="/bike3.jpg"alt="bike3"onmouseover="changeImg(3)" width="250px"onmouseout="resetImage(3)">
+<img id="bike4" src="/bike4.jpg"alt="bike4"onmouseover="changeImg(4)" width="250px"onmouseout="resetImage(4)">
+            </td></tr>
+           
+        </tbody>
+    </table>
+<script>
+    function changeImg(a){
+        if(a==1){
+            document.getElementById("mainImage").src="/bike1.jpg"
+            document.getElementById("bike1").style.border = "3px solid blue"
+        }
+        if(a==2){
+            document.getElementById("mainImage").src="/bike2.jpg"
+            document.getElementById("bike2").style.border = "3px solid blue"
+        }
+        if(a==3){
+            document.getElementById("mainImage").src="/bike3.jpg"
+            document.getElementById("bike3").style.border = "3px solid blue"
+        }
+        if(a==4){
+            document.getElementById("mainImage").src="/bike4.jpg"
+            document.getElementById("bike4").style.border = "3px solid blue"
+        }
+    }
+
+   function resetImage(b){
+    document.getElementById("mainImage").src= "/bike1.jpg"
+    if(b==1)
+    document.getElementById("bike1").style.border="none"
+    if(b==2)
+    document.getElementById("bike2").style.border="none"
+    if(b==3)
+    document.getElementById("bike3").style.border="none"
+    if(b==4)
+    document.getElementById("bike4").style.border="none"
+    }
+</script>
+</body>
+</html>
